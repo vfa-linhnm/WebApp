@@ -19,14 +19,6 @@ import WebViewComponent from './src/WebViewComponent';
 const App = () => {
   return (
     <SafeAreaView style={{}}>
-      <View style={{position: 'absolute', top: 130, zIndex: 2, opacity: 1}}>
-        <Button title="active" onPress={() => showNoti('hi', 'good morning')} />
-        <Button title="schedule" onPress={() => setNotiSchedule(25)} />
-        <Button
-          title="cancel"
-          onPress={() => PushNotification.cancelAllLocalNotifications()}
-        />
-      </View>
       <View
         style={{
           width: '100%',
